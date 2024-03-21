@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PepperPhoto_Compagnon</string>
+    <string name="title_QR">Générateur de QR Codes</string>
+    <string name="title_Manual">Manuel d\'utilisation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
