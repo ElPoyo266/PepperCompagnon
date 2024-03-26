@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.pepperphoto_compagnon.R;
 import com.example.pepperphoto_compagnon.databinding.FragmentManualBinding;
+import com.github.barteksc.pdfviewer.PDFView;
 
 public class ManualFragment extends Fragment {
 
@@ -23,9 +25,16 @@ public class ManualFragment extends Fragment {
 
         binding = FragmentManualBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
         return root;
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        PDFView pdfView = getView().findViewById(R.id.pdfview);
+        pdfView.fromAsset("Manuel_utilisation.pdf").load();
+    }
+
 
     @Override
     public void onDestroyView() {
