@@ -35,7 +35,6 @@ public class ManualFragment extends Fragment {
         pdfView.fromAsset("Manuel_utilisation.pdf").load();
     }
 
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
